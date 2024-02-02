@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScroll Example</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+<body>
+    <!-- Your website content goes here -->
+
+    <h1 class="mbr-fonts-style mbr-white mb-4 display-1 animate__animated animate__delay-1s animate__fadeInUp">
+        Revolutionizing Donations.
+    </h1>
+    
+    <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7 animate__animated animate__delay-1s animate__fadeInUp">
+        At Void To Art, we recognize the diverse range of global challenges that require collective efforts for resolution. Our platform empowers users to make a positive impact by donating essential items such as clothes, books, toys, and food, or contributing financially to various relief funds and charities. Your generosity plays a pivotal role in addressing pressing issues, fostering community support, and creating a tangible difference in the lives of those in need.
+    </p>
+    
+    <div class="mbr-section-btn">
+        <a class="btn btn-white-outline display-7 animate__animated animate__delay-1s animate__fadeInUp" href="#" onclick="scrollToSection()">Learn More</a>
+    </div>
+
+    <!-- Section to scroll to -->
+    <div id="scrollTarget">
+        <h2>Learn More Section</h2>
+        <p>This is a large section of content that you want to showcase when the user clicks "Learn More".</p>
+        <!-- Add more content here as needed -->
+    </div>
+
+    <script>
+        // Function to scroll to the target section
+        function scrollToSection() {
+            var targetElement = document.getElementById('scrollTarget');
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>
